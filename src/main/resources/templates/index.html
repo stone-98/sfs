@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li th:each="file: ${files}" th:if="${#strings.isEmpty(content)}">
+        <a th:text="${file.fileName}" th:href="${file.href}">fileName</a>
+    </li>
+    <pre th:text="${content}" th:if="${not #strings.isEmpty(content)}">content</pre>
+</ul>
+</body>
+</html>
