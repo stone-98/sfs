@@ -4,7 +4,7 @@
 # 启动类
 
 ```java
-SfsStartingAid
+SfsStarter.java
 ```
 
 # 访问链接
